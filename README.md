@@ -11,17 +11,16 @@ mvn spring-boot:run
 
 Request:
 ```bash
-http :8080/exchangerates/latest?base=USD
+http :8080/exchangerates/latest?base=RUB
 ```
 
 Response:
 ```json
 {
-    "base": "USD",
-    "rates": {
-        "EUR": 0.011866105,
-        "RUB": 84.273655,
-        "USD": 0.012899035
-    }
+  "base": "RUB",
+  "rates": {
+    "EUR": 0.011866105,
+    "USD": 0.012899035
+  }
 }
 ```
